@@ -1,0 +1,51 @@
+/* Styles for the classmate card component */
+.classmate-card {
+  background-color: #f8f9fa; 
+  border: none; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+  transition: transform 0.2s; 
+}
+
+/* Hover effect to lift the card slightly */
+.classmate-card:hover {
+  transform: translateY(-2px); 
+}
+
+/* Main container styles */
+.app-container {
+  background-color: #f0f2f5; 
+  min-height: 100vh; 
+  padding: 20px 0; 
+}
+
+/* Navbar styles */
+.navbar {
+  margin-bottom: 20px; 
+}
+
+/* Link styles in the navbar */
+.nav-link {
+  color: white !important; 
+  margin: 0 10px; 
+}
+
+/* Hover effect for navbar links */
+.nav-link:hover {
+  color: #adb5bd !important;
+}
+
+/* Table styles */
+.table th {
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.table th:hover {
+  background-color: #e0e0e0;
+}
+
+/* Form styles */
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
