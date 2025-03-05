@@ -1,0 +1,19 @@
+.profile-card {
+    transition: transform 0.2s;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .app {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  /* AG Grid customizations */
+  .ag-theme-alpine {
+    --ag-header-background-color: #f0f0f0;
+    --ag-odd-row-background-color: #fcfcfc;
+  }
