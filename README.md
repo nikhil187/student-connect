@@ -57,7 +57,7 @@ In the development of **Student Connect**, I utilized Generative AI to enhance m
 - **AI-Generated Code**: 
   - The initial structure and functionality of various components, such as `App.js`, `ClassmateCard.js`, `ClassmatesList.js`, and `ProfileTable.js`, were with the assistance of AI to get a structured code. 
   - The AI also helped in creating the layout and styling using Bootstrap, ensuring a responsive design.
-
+  - Implemented Basic Local Storage for storing profiles.
 - **My Own Code**:
   - I implemented the **search functionality**, allowing users to filter classmates based on names, favorite colors, or favorite foods.
   - I developed the **delete option**, enabling users to remove classmates from the directory, which involved managing state updates and user confirmations.
