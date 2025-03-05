@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Expanding "My Classmates" to Student Connect - Interactive Student Directory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+**Student Connect** is a React-based interactive student directory application that allows users to create, edit, and manage profiles of classmates. Users can like profiles and view them in both card and table formats, making it easy to connect with peers.The can also tghemselves into the the class.
 
-## Available Scripts
+## Features
+- **Create, Edit, and Delete Profiles**: Users can add new classmates, modify existing profiles, or remove them entirely.
+- **Like Functionality**: Users can like profiles, which updates the like count in real-time.
+- **Responsive Design**: The application is built with Bootstrap, ensuring a mobile-friendly experience.
+- **Search and Filter**: Easily find classmates by searching through names, favorite colors, or favorite foods.
+- **Table View**: View all profiles in a sortable table format for better organization.
 
-In the project directory, you can run:
+## Technologies Used
+- **React.js**: For building the user interface.
+- **Bootstrap**: For responsive design and styling.
+- **gh-pages**: For deploying the application to GitHub Pages.
 
-### `npm start`
+## Getting Started
+To run the application locally, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/nikhil187/student-connect.git
+   cd student-connect
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### `npm test`
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Open your browser and navigate to `http://localhost:3000`.
 
-### `npm run build`
+## Deployment
+The application is deployed on GitHub Pages. You can access it here: [Student Connect](https://nikhil187.github.io/student-connect/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Use of Generative AI
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In the development of **My Classmates**, I utilized Generative AI to assist in generating code snippets and components, which significantly accelerated the development process. Here’s how I used it:
 
-### `npm run eject`
+### How I Used Generative AI
+## Use of Generative AI
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+In the development of **Student Connect**, I utilized Generative AI to enhance my coding process. Here’s a detailed overview of how I integrated AI into my workflow:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### How I Used Generative AI
+- I provided basic code snippets and concepts to the AI, which served as a foundation for the application. 
+- Through iterative refining prompts, I guided the AI to generate more structured and error-free code. This collaborative approach allowed me to leverage AI's capabilities while ensuring that the final output met my project requirements.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### AI-Generated vs. My Own Code
+- **AI-Generated Code**: 
+  - The initial structure and functionality of various components, such as `App.js`, `ClassmateCard.js`, `ClassmatesList.js`, and `ProfileTable.js`, were with the assistance of AI to get a structured code. 
+  - The AI also helped in creating the layout and styling using Bootstrap, ensuring a responsive design.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **My Own Code**:
+  - I implemented the **search functionality**, allowing users to filter classmates based on names, favorite colors, or favorite foods.
+  - I developed the **delete option**, enabling users to remove classmates from the directory, which involved managing state updates and user confirmations.
 
-## Learn More
+This combination of my foundational code and AI assistance resulted in a well-structured, functional, and user-friendly application.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
