@@ -1,45 +1,37 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import ClassmateCard from './ClassmateCard';
+import { Card, Button, Row, Col } from 'react-bootstrap';
+import './ClassmatesList.css';
 
-function ClassmatesList({ profiles, setProfiles, setEditingProfile, setShowForm }) {
-  // Handle like functionality
-  const handleLike = (id) => {
-    setProfiles(profiles.map(profile => 
-      profile.id === id ? { ...profile, likes: profile.likes + 1 } : profile
-    ));
-  };
-
-  // Handle delete functionality
-  const handleDelete = (id) => {
-    if (window.confirm('Are you sure you want to delete this classmate?')) {
-      setProfiles(profiles.filter(profile => profile.id !== id));
-    }
-  };
-
-  // Handle edit functionality
-  const handleEdit = (profile) => {
-    setEditingProfile(profile);
-    setShowForm(true);
-  };
-
+const ClassmatesList = ({ profiles, onDelete, onEdit, onLike }) => {
   return (
-    <Container className="py-4">
-      <h2 className="text-center mb-4">My Classmates</h2>
-      <Row>
-        {profiles.map((profile) => (
-          <Col key={profile.id} xs={12} md={6} lg={4} className="mb-4">
-            <ClassmateCard
-              profile={profile}
-              onLike={handleLike}
-              onDelete={handleDelete}
-              onEdit={handleEdit}
-            />
-          </Col>
-        ))}
-      </Row>
-    </Container>
+    <Row xs={1} md={2} lg={3} className="g-4">
+      {profiles.map((profile) => (
+        <Col key={profile.id}>
+          <Card className="profile-card h-100">
+            <Card.Body>
+              <Card.Title>{profile.name}</Card.Title>
+              <Card.Text>
+                <p><strong>Favorite Color:</strong> {profile.favoriteColor}</p>
+                <p><strong>Favorite Food:</strong> {profile.favoriteFood}</p>
+                <p><strong>Likes:</strong> {profile.likes}</p>
+              </Card.Text>
+              <div className="d-flex justify-content-between">
+                <Button variant="outline-primary" onClick={() => onLike(profile.id)}>
+                  ❤️ Like
+                </Button>
+                <Button variant="outline-secondary" onClick={() => onEdit(profile)}>
+                  ✏️ Edit
+                </Button>
+                <Button variant="outline-danger" onClick={() => onDelete(profile.id)}>
+                  🗑️ Delete
+                </Button>
+              </div>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </Row>
   );
-}
+};
 
 export default ClassmatesList;
