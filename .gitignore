@@ -17,6 +17,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.env
 
 npm-debug.log*
 yarn-debug.log*
@@ -34,3 +35,16 @@ backend/
 # .dockerignore
 # docker-compose.yml
 # Dockerfile.*
+
+# Excluding private files
+Assign*.pdf
+student-connect/
+
+# Docker logs
+*.log
+
+# Temporary files
+ec2-*.yml
+ec2-*.sh
+update-env.sh
+deploy-to-ec2.sh

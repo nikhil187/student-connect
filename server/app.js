@@ -5,7 +5,7 @@ const profilesRouter = require('./routes/profiles');
 
 // Determine the CORS origin based on environment
 const isDevelopment = process.env.NODE_ENV === 'development';
-const corsOrigin = isDevelopment ? 'http://localhost:3001' : '*';
+const corsOrigin = isDevelopment ? 'http://localhost:3000' : '*';
 
 // CORS configuration
 app.use(cors({
